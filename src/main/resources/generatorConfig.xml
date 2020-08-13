@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="context1">
+    <jdbcConnection
+    	connectionURL="jdbc:db2://40.81.210.42:50000/DB01:retrieveMessagesFromServerOnGetMessage=true;"
+    	driverClass="com.ibm.db2.jcc.DB2Driver"
+    	password="Nova3751System"
+    	userId="db2inst1"
+   	/>
+    <javaModelGenerator 
+    	targetPackage="com.nova.jw.sample" 
+    	targetProject="MyBatis/src/main/java/" 
+   	/>
+    <javaClientGenerator 
+    	targetPackage="com.nova.jw.sample" 
+    	targetProject="MyBatis/src/main/java/" 
+    	type="XMLMAPPER" 
+   	/>
+    <table 
+    	schema="db2inst1" 
+    	tableName="%"
+   	/>
+  </context>
+</generatorConfiguration>
